@@ -1,5 +1,7 @@
 # valheim-k8s
 
+This is a fork of https://github.com/Addyvan/valheim-k8s with some minor changes.
+
 Kubernetes deployment for a valheim game-server. Based off the dockerization work by lloesche [here](https://github.com/lloesche/valheim-server-docker).
 
 ## Usage
@@ -7,7 +9,7 @@ Kubernetes deployment for a valheim game-server. Based off the dockerization wor
 Note: This assumes the node you are running on can use `/data/valheim` mounted as a host volume for persistence.
 
 ```bash
-helm repo add valheim-k8s https://addyvan.github.io/valheim-k8s/
+helm repo add valheim-k8s https://alienth.github.io/valheim-k8s/
 helm repo update
 helm install valheim-server valheim-k8s/valheim-k8s  \
   --set worldName=example-world-name \
