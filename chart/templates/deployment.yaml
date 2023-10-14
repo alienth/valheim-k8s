@@ -28,6 +28,8 @@ spec:
         env:
         - name: SERVER_NAME
           value: {{ .Values.serverName }}
+        - name: SERVER_ARGS
+          value: {{ .Values.serverArgs }}
         - name: WORLD_NAME
           value: {{ .Values.worldName }}
         {{ if .Values.passwordSecret -}}

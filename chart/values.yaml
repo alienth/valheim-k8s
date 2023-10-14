@@ -2,6 +2,10 @@ worldName: example-world-name
 serverName: example-server-name
 password: password 
 
+# See https://github.com/lloesche/valheim-server-docker/files/12820591/Valheim.Dedicated.Server.Manual.pdf
+# for example server args.
+serverArgs: ""
+
 resources: {}
 
 image:
